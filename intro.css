@@ -1897,3 +1897,49 @@ body{
         transform: scale(1);
     }
  }
+ /* Thêm các media queries để điều chỉnh giao diện cho các thiết bị di động */
+@media screen and (max-width: 768px) {
+    /* Các quy tắc CSS cho các thiết bị di động ở đây */
+    .box-content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-content .left,
+    .box-content .right {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .left > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .left .lanterns-content,
+    .left .lanterns-content::before {
+        display: none;
+    }
+
+    .right .content .title h1 {
+        margin-top: 0;
+    }
+
+    .box-content .right .content p {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .box-content .right .content h3 {
+        padding: 10px 15px;
+        margin-top: 0;
+    }
+}
+
+/* Thêm các media queries để điều chỉnh giao diện cho các thiết bị tablet */
+@media screen and (max-width: 1024px) {
+    /* Các quy tắc CSS cho các thiết bị tablet ở đây */
+}
